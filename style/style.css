@@ -1,0 +1,126 @@
+/* Design By Wisam Zouidi
+   05/12/2024
+   Responsive Login Interface */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9; /* Light gray for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Login Card Styling */
+.login-card {
+    background: #fff; /* White background for the card */
+    color: #333;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+    text-align: center;
+}
+
+/* Title Styling */
+.login-card h2 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    color: #2575fc;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 4px rgba(37, 117, 252, 0.4);
+}
+
+/* Login Button */
+.login-btn {
+    background: #2575fc;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background: #6a11cb;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.register-link a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-card {
+        padding: 1.5rem;
+    }
+
+    .login-card h2 {
+        font-size: 20px;
+    }
+
+    input, .login-btn {
+        font-size: 13px;
+    }
+}
